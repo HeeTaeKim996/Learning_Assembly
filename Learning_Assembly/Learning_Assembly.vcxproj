@@ -81,10 +81,10 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)Irvine\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\Irvine\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <MASM>
-      <IncludePaths>$(SolutionDir)Irvine\;%(IncludePaths)</IncludePaths>
+      <IncludePaths>$(SolutionDir)Libs\Irvine\;%(IncludePaths)</IncludePaths>
     </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
