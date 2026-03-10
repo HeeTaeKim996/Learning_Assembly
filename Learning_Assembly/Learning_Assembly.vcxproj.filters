@@ -19,7 +19,16 @@
     <MASM Include="3.2.0_1.asm">
       <Filter>Source Files</Filter>
     </MASM>
-    <MASM Include="3.2.1_1.asm">
+    <MASM Include="3.2.1_1_Except_Irvine32.inc.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="3.4.10_1_FirstUse_.data.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="3.5_1_=_EQU_TEXTEQU.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="3.4.10_2.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>

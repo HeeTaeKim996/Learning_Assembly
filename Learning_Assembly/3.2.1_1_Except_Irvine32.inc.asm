@@ -12,7 +12,6 @@ TITLE Add and substract
 
 ; PROTO is Directive that Declare this function is Extern function
 ExitProcess PROTO, dwExitCode:DWORD
-; PROTO is Exiting Precessor Function
 
 
 
