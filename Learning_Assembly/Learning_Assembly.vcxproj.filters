@@ -25,10 +25,25 @@
     <MASM Include="3.4.10_1_FirstUse_.data.asm">
       <Filter>Source Files</Filter>
     </MASM>
-    <MASM Include="3.5_1_=_EQU_TEXTEQU.asm">
+    <MASM Include="3.5_1_=_EQU, TEXTEQU   .asm">
       <Filter>Source Files</Filter>
     </MASM>
     <MASM Include="3.4.10_2.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.1.4_1_MOVZX, MOVSX   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.1.6_1_LAHF, SAHF   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.1.7_1_XCHG   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.1.8_1_Accessing Array%27s Component   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.2.1_1_INC, DEC, ADD, SUB, NEG   .asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
