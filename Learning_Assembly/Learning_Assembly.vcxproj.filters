@@ -46,5 +46,17 @@
     <MASM Include="4.2.1_1_INC, DEC, ADD, SUB, NEG   .asm">
       <Filter>Source Files</Filter>
     </MASM>
+    <MASM Include="4.2.6_1_ZeroFlag, CarryFlag   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.2.6_2 AuxillaryFlag, ParityFlag   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.2.6_3_SignFlag, OverFlowFlag   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.3.1_1.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
   </ItemGroup>
 </Project>
