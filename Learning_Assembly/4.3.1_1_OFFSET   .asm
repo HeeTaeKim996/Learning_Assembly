@@ -13,6 +13,9 @@ wVal WORD ?
 dVal DWORD ? 
 dVal2 DWORD ? 
 
+bigArray DWORD 500 DUP(?)
+pArray DWORD bigArray		; pArray saves bigArray's address
+
 .code
 main PROC
 	mov esi, OFFSET bVal
@@ -26,6 +29,12 @@ main PROC
 	
 	mov esi, OFFSET main
 	call DumpRegs
+
+
+	mov esi, OFFSET bigArray
+	mov eax, pArray	
+	call DumpRegs			; eax & esi is same
+
 
 	INVOKE ExitProcess, 0
 main ENDP

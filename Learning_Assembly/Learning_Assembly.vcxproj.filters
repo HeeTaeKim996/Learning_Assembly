@@ -55,7 +55,19 @@
     <MASM Include="4.2.6_3_SignFlag, OverFlowFlag   .asm">
       <Filter>Source Files</Filter>
     </MASM>
-    <MASM Include="4.3.1_1.asm">
+    <MASM Include="4.3.1_1_OFFSET   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.3.2_1_ALIGN   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.3.3_1_PTR   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.3.4_1_TYPE, LENGTHOF, SIZEOF   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.3.7_1_LABEL   .asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
