@@ -146,7 +146,7 @@
     <MASM Include="3.4.10_1_FirstUse_.data.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
-    <MASM Include="3.4.10_2.asm">
+    <MASM Include="3.4.10_2_DUP   .asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
     <MASM Include="3.5_1_=_EQU, TEXTEQU   .asm">
@@ -188,7 +188,18 @@
     <MASM Include="4.3.4_1_TYPE, LENGTHOF, SIZEOF   .asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
-    <MASM Include="4.3.7_1_LABEL   .asm" />
+    <MASM Include="4.3.7_1_LABEL   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="4.4.1_1_Indirect Addressing {  [n] }   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="4.4.4_1_TYPEDEF   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="4.5.1_JMP, LOOP   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </MASM>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

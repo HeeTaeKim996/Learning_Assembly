@@ -28,7 +28,7 @@
     <MASM Include="3.5_1_=_EQU, TEXTEQU   .asm">
       <Filter>Source Files</Filter>
     </MASM>
-    <MASM Include="3.4.10_2.asm">
+    <MASM Include="3.4.10_2_DUP   .asm">
       <Filter>Source Files</Filter>
     </MASM>
     <MASM Include="4.1.4_1_MOVZX, MOVSX   .asm">
@@ -68,6 +68,15 @@
       <Filter>Source Files</Filter>
     </MASM>
     <MASM Include="4.3.7_1_LABEL   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.4.1_1_Indirect Addressing {  [n] }   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.4.4_1_TYPEDEF   .asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="4.5.1_JMP, LOOP   .asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
