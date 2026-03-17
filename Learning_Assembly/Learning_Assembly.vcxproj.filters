@@ -14,6 +14,9 @@
     <Filter Include="Source Files\5.4_  %28Stack, Procedure%29">
       <UniqueIdentifier>{810b9d13-dc24-4eb7-a69d-d26fd44f8d37}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\6.1_%28Bool%29">
+      <UniqueIdentifier>{03abc4aa-0962-4f1a-b9dd-400f81386272}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <MASM Include="00.first.asm">
@@ -157,8 +160,20 @@
     <MASM Include="5.5.2_Nested Procedure Call   .asm">
       <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
     </MASM>
-    <MASM Include="5.5.3_Proc Example%28ArraySum%29   .asm">
+    <MASM Include="5.5.3_PROC_USES  .asm">
       <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+    </MASM>
+    <MASM Include="6.2.2_AND, OR   .asm">
+      <Filter>Source Files\6.1_%28Bool%29</Filter>
+    </MASM>
+    <MASM Include="6.2.4_NOT, XOR   .asm">
+      <Filter>Source Files\6.1_%28Bool%29</Filter>
+    </MASM>
+    <MASM Include="6.2.7_TEST, CMP   .asm">
+      <Filter>Source Files\6.1_%28Bool%29</Filter>
+    </MASM>
+    <MASM Include="6.2.9_Setting EFLAGS Manually   .asm">
+      <Filter>Source Files\6.1_%28Bool%29</Filter>
     </MASM>
   </ItemGroup>
   <ItemGroup>

@@ -17,8 +17,10 @@ main PROC
 	mov ecx, LENGTHOF arr
 	mov ebx, TYPE arr
 
-	call ArraySum
-	
+	call ArraySum	
+	call DumpRegs
+
+	call ArraySum2
 	call DumpRegs
 
 	INVOKE ExitProcess, 0
@@ -28,7 +30,7 @@ main ENDP
 
 
 
-ArraySum PROC
+ArraySum PROC 
 	push ecx
 	push esi
 
@@ -48,6 +50,17 @@ ArraySum PROC
 ArraySum ENDP
 
 
+ArraySum2 PROC USES ecx esi		; USES Automatically Address PUSH - POP (Restore Register)
+	mov eax, 0
+
+	L1:
+	add eax, [esi]
+	add esi, ebx
+
+	loop L1
+
+	ret
+ArraySum2 ENDP
 
 
 END main
