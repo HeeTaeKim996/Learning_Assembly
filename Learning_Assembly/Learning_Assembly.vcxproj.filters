@@ -11,6 +11,9 @@
     <Filter Include="Source Files\3_4">
       <UniqueIdentifier>{c665caae-1df4-4dcd-9aec-ee55a77d1718}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\5.4_  %28Stack, Procedure%29">
+      <UniqueIdentifier>{810b9d13-dc24-4eb7-a69d-d26fd44f8d37}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <MASM Include="00.first.asm">
@@ -115,5 +118,52 @@
     <MASM Include="5.3.2_1_2_OpenInputFile, ReadFromFile, CloseFile   .asm">
       <Filter>Source Files\5.3_Irvinre32Lib</Filter>
     </MASM>
+    <MASM Include="5.3.2_10_ParselInteger32.asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_11_Random32, Randomize, RandomRange   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_12_ReadChar, ReadDec, ReadHex, ReadInt, ReadKey   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_13_ReadString   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_14_SetTextColor   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_15_StrLength   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_16_WriteBin, WriteBinB, WriteChar, WriteDec, WriteHex, WriteHexB, WriteInt, WriteString   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_17_WriteWindowsMsg   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.4.2_1_PUSH, POP   .asm">
+      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+    </MASM>
+    <MASM Include="5.4.2_2__PUSHFD, PUSHAD   .asm">
+      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+    </MASM>
+    <MASM Include="5.4.2_3_ +_DONT_TOUCH_ESP, EBP  .asm">
+      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+    </MASM>
+    <MASM Include="5.5.1_PROC, CALL, EIP, RET   .asm">
+      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+    </MASM>
+    <MASM Include="5.5.2_Nested Procedure Call   .asm">
+      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+    </MASM>
+    <MASM Include="5.5.3_Proc Example%28ArraySum%29   .asm">
+      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Template.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
