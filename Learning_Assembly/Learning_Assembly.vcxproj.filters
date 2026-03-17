@@ -5,79 +5,115 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Source Files\5.3_Irvinre32Lib">
+      <UniqueIdentifier>{e2fa4ca6-d695-43ea-951a-e99a804c6855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3_4">
+      <UniqueIdentifier>{c665caae-1df4-4dcd-9aec-ee55a77d1718}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <MASM Include="00.first.asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="00.UseLibrary.asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="3.1.0_1.asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="3.2.0_1.asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="3.2.1_1_Except_Irvine32.inc.asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="3.4.10_1_FirstUse_.data.asm">
-      <Filter>Source Files</Filter>
-    </MASM>
-    <MASM Include="3.5_1_=_EQU, TEXTEQU   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="3.4.10_2_DUP   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
+    </MASM>
+    <MASM Include="3.5_1_=_EQU, TEXTEQU   .asm">
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.1.4_1_MOVZX, MOVSX   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.1.6_1_LAHF, SAHF   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.1.7_1_XCHG   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.1.8_1_Accessing Array%27s Component   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.2.1_1_INC, DEC, ADD, SUB, NEG   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.2.6_1_ZeroFlag, CarryFlag   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.2.6_2 AuxillaryFlag, ParityFlag   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.2.6_3_SignFlag, OverFlowFlag   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.3.1_1_OFFSET   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.3.2_1_ALIGN   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.3.3_1_PTR   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.3.4_1_TYPE, LENGTHOF, SIZEOF   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.3.7_1_LABEL   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.4.1_1_Indirect Addressing {  [n] }   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.4.4_1_TYPEDEF   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
     </MASM>
     <MASM Include="4.5.1_JMP, LOOP   .asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\3_4</Filter>
+    </MASM>
+    <MASM Include="5.3.2_1_1_CreateOutputFile, WriteToFile, CloseFile, WaitMsg, Clrscr_   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_2_DumpMem   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_3 _GetCommandTail  .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_4_GetMaxXY.asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_5_GetMseconds   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_6_GetTextColor   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_7_Gotoxy   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_8_IsDigit   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_9_MsgBox, MsgBoxAsk   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
+    </MASM>
+    <MASM Include="5.3.2_1_2_OpenInputFile, ReadFromFile, CloseFile   .asm">
+      <Filter>Source Files\5.3_Irvinre32Lib</Filter>
     </MASM>
   </ItemGroup>
 </Project>
