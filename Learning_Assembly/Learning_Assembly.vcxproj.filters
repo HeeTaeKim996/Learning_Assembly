@@ -17,6 +17,12 @@
     <Filter Include="Source Files\6.1_%28Bool%29">
       <UniqueIdentifier>{03abc4aa-0962-4f1a-b9dd-400f81386272}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\6.2_IF_JMP">
+      <UniqueIdentifier>{43cbd776-e203-4eb0-bb36-ab3151ead122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\6.3_IF_JMP_APPLICATION">
+      <UniqueIdentifier>{7267a852-bd80-4528-b82f-e38989fa9b70}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <MASM Include="00.first.asm">
@@ -172,8 +178,26 @@
     <MASM Include="6.2.7_TEST, CMP   .asm">
       <Filter>Source Files\6.1_%28Bool%29</Filter>
     </MASM>
+    <MASM Include="6.3.1_JZ, JNZ, JC, JNC   .asm">
+      <Filter>Source Files\6.2_IF_JMP</Filter>
+    </MASM>
+    <MASM Include="6.3.2_CMP+%28JZ, JL, JG%29   .asm">
+      <Filter>Source Files\6.2_IF_JMP</Filter>
+    </MASM>
     <MASM Include="6.2.9_Setting EFLAGS Manually   .asm">
-      <Filter>Source Files\6.1_%28Bool%29</Filter>
+      <Filter>Source Files\6.2_IF_JMP</Filter>
+    </MASM>
+    <MASM Include="6.3.3_Other_IF_JMP.asm">
+      <Filter>Source Files\6.2_IF_JMP</Filter>
+    </MASM>
+    <MASM Include="6.3.4_1_FLAG_CHECK   .asm">
+      <Filter>Source Files\6.3_IF_JMP_APPLICATION</Filter>
+    </MASM>
+    <MASM Include="6.3.4_2_MIN_MAX.asm">
+      <Filter>Source Files\6.3_IF_JMP_APPLICATION</Filter>
+    </MASM>
+    <MASM Include="6.3.4_3_Find   .asm">
+      <Filter>Source Files\6.3_IF_JMP_APPLICATION</Filter>
     </MASM>
   </ItemGroup>
   <ItemGroup>

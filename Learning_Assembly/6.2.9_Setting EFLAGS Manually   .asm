@@ -43,6 +43,17 @@ main PROC
 	or al, 0	; OF = 0
 	call DumpRegs
 
+	; PF
+	mov al, 1h
+	cmp al, 0	; PF = 0
+	call DumpRegs
+
+	mov al, 0h
+	cmp al, 0	; PF = 1
+	call DumpRegs
+
+
+
 
 	INVOKE ExitProcess, 0
 main ENDP
