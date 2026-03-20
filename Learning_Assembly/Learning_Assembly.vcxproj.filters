@@ -23,6 +23,9 @@
     <Filter Include="Source Files\6.3_IF_JMP_APPLICATION">
       <UniqueIdentifier>{7267a852-bd80-4528-b82f-e38989fa9b70}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\6.4_">
+      <UniqueIdentifier>{03b09bbb-c527-4d3c-aaeb-da1f41742126}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <MASM Include="00.first.asm">
@@ -198,6 +201,24 @@
     </MASM>
     <MASM Include="6.3.4_3_Find   .asm">
       <Filter>Source Files\6.3_IF_JMP_APPLICATION</Filter>
+    </MASM>
+    <MASM Include="6.3.4_4__+ Encrypt, Decrypt   .asm">
+      <Filter>Source Files\6.3_IF_JMP_APPLICATION</Filter>
+    </MASM>
+    <MASM Include="6.4.2_LOOPZ%28LOOPE%29, LOOPNZ%28LOOPNE%29   .asm">
+      <Filter>Source Files\6.4_</Filter>
+    </MASM>
+    <MASM Include="6.5.2_1_IF_AND, IF_OR   .asm">
+      <Filter>Source Files\6.4_</Filter>
+    </MASM>
+    <MASM Include="6.5.3_1_WHILE   .asm">
+      <Filter>Source Files\6.4_</Filter>
+    </MASM>
+    <MASM Include="6.5.3_2_Example_While_Add   .asm">
+      <Filter>Source Files\6.4_</Filter>
+    </MASM>
+    <MASM Include="6.5.4_NEAR_PTR   .asm">
+      <Filter>Source Files\6.4_</Filter>
     </MASM>
   </ItemGroup>
   <ItemGroup>
