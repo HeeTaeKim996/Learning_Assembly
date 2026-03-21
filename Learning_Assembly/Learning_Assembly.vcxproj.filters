@@ -220,7 +220,7 @@
     <MASM Include="6.5.4_NEAR_PTR   .asm">
       <Filter>Source Files\6.4_</Filter>
     </MASM>
-    <MASM Include="6.6.2_.asm">
+    <MASM Include="6.6.2_Example_ADD_SUB_Calculator   .asm">
       <Filter>Source Files\6.4_</Filter>
     </MASM>
   </ItemGroup>

@@ -346,7 +346,7 @@
     <MASM Include="6.5.4_NEAR_PTR   .asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
-    <MASM Include="6.6.2_.asm" />
+    <MASM Include="6.6.2_Example_ADD_SUB_Calculator   .asm" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Template.txt" />

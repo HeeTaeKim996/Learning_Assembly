@@ -12,23 +12,19 @@ WriteString PROTO
 Crlf PROTO
 
 .data
-Curr DWORD 0
-
+Curr SDWORD 0
 Opp BYTE ' '
-Save DWORD 0
+Save SDWORD 0
 
-DEC_SIZE = 8
 MAX_DEC DWORD ?
 
 .data
-BufferSize = DEC_SIZE
-Buff1 BYTE BufferSize DUP(' ')
 
-; dump BYTE 1000 DUP(0)
+BuffSize = 15
 
-SecondBuffSize = BufferSize + 2
-SecondBuff BYTE SecondBuffSize DUP(' ')
-
+SaveBuff	BYTE BuffSize DUP(' ')
+OppBuff		BYTE BuffSize DUP(' ')
+CurrBuff	BYTE BuffSize DUP(' ')
 
 .code
 main PROC
@@ -84,17 +80,6 @@ main ENDP
 
 Init PROC
 
-	mov eax, 1
-	mov ecx, DEC_SIZE - 1
-	mov ebx, 10
-
-	_LOOP:
-	mul ebx
-	loop _LOOP
-
-	mov MAX_DEC, eax
-
-
 	mov eax, 0
 	mov ebx, 0
 	mov ecx, 0
@@ -107,20 +92,20 @@ Init ENDP
 InChar PROC
 
 	movzx ebx, al
-	sub ebx, 48
+	sub ebx, 48			; - '0'
 	
 	mov eax, Curr
-	cmp eax, MAX_DEC
-	jae _Exit
-	
 	mov ecx, 10
 	mul ecx
-
+	
 	add eax, ebx
+
+	cmp eax, 03B9ACA00h
+	jae _EXIT
+
 	mov Curr, eax
-	_Exit:
-
-
+	
+	_EXIT:
 	ret
 InChar ENDP
 
@@ -212,83 +197,96 @@ AddEnter ENDP
 Display PROC
 	
 	call Clrscr
-
-	mov ecx, SecondBuffSize
-	mov esi, OFFSET SecondBuff
-
-	_LOOP_CLR_SECOND:
-	mov BYTE PTR [esi], ' '
-	inc esi
-	loop _LOOP_CLR_SECOND
-
+	
 	mov eax, Save
-	mov esi, OFFSET SecondBuff
+	mov esi, OFFSET SaveBuff
 
+	call ClearBuff
 	call WriteDecToBuffer
 
-	add esi, 1
-	mov al, Opp
-	mov BYTE PTR [esi], al
-	
-
-
-	mov edx, OFFSET SecondBuff
+	mov edx, OFFSET SaveBuff
 	call WriteString
 	call Crlf
 
-	mov ecx, BufferSize
-	mov esi, OFFSET Buff1
 
-	_Loop_Clr:
-	mov BYTE PTR [esi], ' '
+	mov al, Opp
+	mov esi, OFFSET OppBuff + BuffSize - 2
+	mov BYTE PTR[esi], al
+	
 	inc esi
-	loop _Loop_Clr
+	mov BYTE PTR [esi], 0
+
+	mov edx, OFFSET OppBuff
+	call WriteString
+	call Crlf
+	
 
 
 	mov eax, Curr
-	mov esi, OFFSET Buff1
+	mov esi, OFFSET CurrBuff
 
+	call ClearBuff
 	call WriteDecToBuffer
 
-	mov edx, OFFSET Buff1
+	mov edx, OFFSET Currbuff
 	call WriteString
+	call Crlf
+
 	
 	ret
 Display ENDP
 
-;-------------------------------------------------------------
-WriteDecToBuffer PROC
-;	
-;	Write Decimal To Buffer
-;
-;	Receives :	EAX - Decimal
-;				ESI - OFFSET Of Buffer
-	mov ebx, 10
-	mov ecx, DEC_SIZE
-	add esi, DEC_SIZE
+ClearBuff PROC USES eax esi
+	mov ecx, BuffSize
+	
+	_LOOP:
+	mov BYTE PTR [esi], ' '
+	inc esi
+	loop _LOOP
 
-	PUSH esi
+	ret
+ClearBuff ENDP
+
+
+
+;-------------------------------------------------------------
+WriteDecToBuffer PROC USES esi
+;	
+	mov BYTE PTR [esi], ' '	
+
+	test eax, 80000000h
+	jz _SKIP_NEG
+
+	mov BYTE PTR [esi], '-'
+	neg eax
+
+	_SKIP_NEG:
+
+
+	add esi, BuffSize - 1
+	mov BYTE PTR [esi], 0
+
+	dec esi
+
+	mov ecx, BuffSize - 3
+	mov ebx, 10
 
 	_LOOP:
+
 	cmp eax, 0
-	jz _LOOP_EXIT
+	jz _LOOP_END
 
 	mov edx, 0
-	div ebx
+	div ebx		; eax = eax / 10, edx = eax % 10
 
 	add dl, '0'
-	mov BYTE PTR[esi], dl
+	mov BYTE PTR [esi], dl
 
-	jnz _LOOP_END
-	mov BYTE PTR [esi], ' '
-
+	
 	_LOOP_END:
 	dec esi
 	loop _LOOP
-
-	_LOOP_EXIT:
-	POP esi
-	inc esi
+	
 	
 	ret
 WriteDecToBuffer ENDP
