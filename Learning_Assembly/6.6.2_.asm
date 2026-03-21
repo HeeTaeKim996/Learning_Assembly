@@ -9,10 +9,13 @@ DumpRegs PROTO
 Clrscr PROTO
 ReadChar PROTO
 WriteString PROTO
+Crlf PROTO
 
 .data
-Opp BYTE ' '
 Curr DWORD 0
+
+Opp BYTE ' '
+Save DWORD 0
 
 DEC_SIZE = 8
 MAX_DEC DWORD ?
@@ -21,10 +24,17 @@ MAX_DEC DWORD ?
 BufferSize = DEC_SIZE
 Buff1 BYTE BufferSize DUP(' ')
 
+; dump BYTE 1000 DUP(0)
+
+SecondBuffSize = BufferSize + 2
+SecondBuff BYTE SecondBuffSize DUP(' ')
+
+
 .code
 main PROC
 	call Init
 
+	call Display
 
 	_LOOP_BEGIN:
 	
@@ -40,6 +50,25 @@ main PROC
 	jmp _LOOP_END
 
 	_NOT_DEC:
+
+	cmp al, '+'
+	jnz _CHECK_SUB
+	call AddOpp
+	jmp _LOOP_END
+
+
+	_CHECK_SUB:
+	cmp al, '-'
+	jnz _NOT_OPP
+	call AddOpp
+	jmp _LOOP_END
+
+
+	_NOT_OPP:
+	cmp al, 13
+	jnz _LOOP_END
+	call AddEnter
+	jmp _LOOP_END
 
 
 	_LOOP_END:
@@ -96,9 +125,117 @@ InChar PROC
 InChar ENDP
 
 
+
+AddOpp PROC
+	movzx eax, al
+	PUSH eax
+
+	mov al, Opp
+	
+	cmp al, '+'
+	jnz _CHECK_SUB
+
+	mov ebx, Save
+	add ebx, Curr
+	mov Curr, ebx
+	jmp _OPP_FINISHED
+
+	_CHECK_SUB:
+	cmp al, '-'
+	jnz _NO_OPP
+
+	mov ebx, Save
+	sub ebx, Curr
+	mov Curr, ebx
+	jmp _OPP_FINISHED
+
+
+	
+
+	_OPP_FINISHED:
+	mov ebx, Curr
+	mov Save, ebx
+	mov Curr, 0
+
+
+	_NO_OPP:
+	mov ebx, Curr
+
+	cmp ebx, 0
+	jz _REPLACE_OPP
+
+	mov Save, ebx
+	mov Curr, 0
+
+	_REPLACE_OPP:
+	
+
+	POP eax
+	mov Opp, al
+	
+	ret
+AddOpp ENDP
+
+
+AddEnter PROC
+	mov al, Opp
+	
+	cmp al, '+'
+	jnz _CHECK_SUB
+
+	mov ebx, Save
+	add ebx, Curr
+	mov Curr, ebx
+	jmp _FINISHED
+
+	_CHECK_SUB:
+	cmp al, '-'
+	jnz _FINISHED
+
+	mov ebx, Save
+	sub ebx, Curr
+	mov Curr, ebx
+	jmp _FINISHED
+
+	_FINISHED:
+	
+	mov ebx, Curr
+	mov Save, ebx
+	mov Curr, 0
+
+	mov Opp, ' '
+
+AddEnter ENDP
+
+
+
 Display PROC
 	
 	call Clrscr
+
+	mov ecx, SecondBuffSize
+	mov esi, OFFSET SecondBuff
+
+	_LOOP_CLR_SECOND:
+	mov BYTE PTR [esi], ' '
+	inc esi
+	loop _LOOP_CLR_SECOND
+
+	mov eax, Save
+	mov esi, OFFSET SecondBuff
+
+	call WriteDecToBuffer
+
+	add esi, 1
+	mov al, Opp
+	mov BYTE PTR [esi], al
+	
+
+
+	mov edx, OFFSET SecondBuff
+	call WriteString
+	call Crlf
+
 	mov ecx, BufferSize
 	mov esi, OFFSET Buff1
 
