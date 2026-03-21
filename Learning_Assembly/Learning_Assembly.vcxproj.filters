@@ -220,6 +220,9 @@
     <MASM Include="6.5.4_NEAR_PTR   .asm">
       <Filter>Source Files\6.4_</Filter>
     </MASM>
+    <MASM Include="6.6.2_.asm">
+      <Filter>Source Files\6.4_</Filter>
+    </MASM>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Template.txt">
