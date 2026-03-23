@@ -26,8 +26,11 @@
     <Filter Include="Source Files\6.4_IF_JMP_2">
       <UniqueIdentifier>{03b09bbb-c527-4d3c-aaeb-da1f41742126}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\6.7_">
+    <Filter Include="Source Files\6.7_IF_WHILE_REPEAT">
       <UniqueIdentifier>{73b049ce-61a3-4105-9f3b-5d9245bf1120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\7.2_">
+      <UniqueIdentifier>{0f4a65e7-0704-456c-b3e0-888ec875e743}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -227,10 +230,19 @@
       <Filter>Source Files\6.4_IF_JMP_2</Filter>
     </MASM>
     <MASM Include="6.7.1_1_.IF, .ELSE, .ENDIF   .asm">
-      <Filter>Source Files\6.7_</Filter>
+      <Filter>Source Files\6.7_IF_WHILE_REPEAT</Filter>
     </MASM>
     <MASM Include="6.7.1_2_.IF AND sign, unsigm JMP_IF   .asm">
-      <Filter>Source Files\6.7_</Filter>
+      <Filter>Source Files\6.7_IF_WHILE_REPEAT</Filter>
+    </MASM>
+    <MASM Include="6.7.3_IF_&amp;&amp;_OR   .asm">
+      <Filter>Source Files\6.7_IF_WHILE_REPEAT</Filter>
+    </MASM>
+    <MASM Include="6.7.4_WHILE, REPEAT   .asm">
+      <Filter>Source Files\6.7_IF_WHILE_REPEAT</Filter>
+    </MASM>
+    <MASM Include="7.2.2_1_SHL, SHR, SAL, SAR   .asm">
+      <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
   <ItemGroup>

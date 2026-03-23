@@ -352,7 +352,16 @@
     <MASM Include="6.7.1_1_.IF, .ELSE, .ENDIF   .asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
-    <MASM Include="6.7.1_2_.IF AND sign, unsigm JMP_IF   .asm" />
+    <MASM Include="6.7.1_2_.IF AND sign, unsigm JMP_IF   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="6.7.3_IF_&amp;&amp;_OR   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="6.7.4_WHILE, REPEAT   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="7.2.2_1_SHL, SHR, SAL, SAR   .asm" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Template.txt" />
