@@ -361,7 +361,10 @@
     <MASM Include="6.7.4_WHILE, REPEAT   .asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
-    <MASM Include="7.2.2_1_SHL, SHR, SAL, SAR   .asm" />
+    <MASM Include="7.2.2_SHL-SHR, SAL-SAR   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="7.2.5_ROL-ROR, RCL-RCR   .asm" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Template.txt" />

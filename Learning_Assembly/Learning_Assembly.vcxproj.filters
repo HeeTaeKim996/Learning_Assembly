@@ -241,8 +241,11 @@
     <MASM Include="6.7.4_WHILE, REPEAT   .asm">
       <Filter>Source Files\6.7_IF_WHILE_REPEAT</Filter>
     </MASM>
-    <MASM Include="7.2.2_1_SHL, SHR, SAL, SAR   .asm">
-      <Filter>Source Files</Filter>
+    <MASM Include="7.2.2_SHL-SHR, SAL-SAR   .asm">
+      <Filter>Source Files\7.2_</Filter>
+    </MASM>
+    <MASM Include="7.2.5_ROL-ROR, RCL-RCR   .asm">
+      <Filter>Source Files\7.2_</Filter>
     </MASM>
   </ItemGroup>
   <ItemGroup>

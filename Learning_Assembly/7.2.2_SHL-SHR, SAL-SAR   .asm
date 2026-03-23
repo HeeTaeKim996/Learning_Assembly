@@ -34,6 +34,7 @@ main PROC
 	call Crlf
 	; ¡Ø SAL == SHL(Exactly Same). Fill New Bit with 0
 	;	SAR != SHR. (Almost Same). Fill New Bit With Same with Max Bit
+	;	SAR is Suit for Assigned Division
 
 	mov eax, 80h
 	sal eax, 24
