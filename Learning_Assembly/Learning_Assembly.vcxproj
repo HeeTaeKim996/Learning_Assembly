@@ -364,7 +364,22 @@
     <MASM Include="7.2.2_SHL-SHR, SAL-SAR   .asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
-    <MASM Include="7.2.5_ROL-ROR, RCL-RCR   .asm" />
+    <MASM Include="7.2.5_ROL-ROR, RCL-RCR   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="7.2.9_SHLD, SHRD   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="7.3.1_EX_Many Byte Shift   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="7.3.2_EX_MulProc   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="7.3.3_EX_BinToASC   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="7.4.1_MUL   .asm" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Template.txt" />

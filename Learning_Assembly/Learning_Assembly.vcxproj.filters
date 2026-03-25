@@ -32,6 +32,12 @@
     <Filter Include="Source Files\7.2_">
       <UniqueIdentifier>{0f4a65e7-0704-456c-b3e0-888ec875e743}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\7.3_Exmaple_Of_Shift">
+      <UniqueIdentifier>{4ea58432-8233-44ab-abc7-011d7a8e3f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\7.4_">
+      <UniqueIdentifier>{c3f60c51-bef9-4349-b553-4aef42cd246a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <MASM Include="00.first.asm">
@@ -246,6 +252,21 @@
     </MASM>
     <MASM Include="7.2.5_ROL-ROR, RCL-RCR   .asm">
       <Filter>Source Files\7.2_</Filter>
+    </MASM>
+    <MASM Include="7.2.9_SHLD, SHRD   .asm">
+      <Filter>Source Files\7.2_</Filter>
+    </MASM>
+    <MASM Include="7.3.1_EX_Many Byte Shift   .asm">
+      <Filter>Source Files\7.3_Exmaple_Of_Shift</Filter>
+    </MASM>
+    <MASM Include="7.3.2_EX_MulProc   .asm">
+      <Filter>Source Files\7.3_Exmaple_Of_Shift</Filter>
+    </MASM>
+    <MASM Include="7.3.3_EX_BinToASC   .asm">
+      <Filter>Source Files\7.3_Exmaple_Of_Shift</Filter>
+    </MASM>
+    <MASM Include="7.4.1_MUL   .asm">
+      <Filter>Source Files\7.4_</Filter>
     </MASM>
   </ItemGroup>
   <ItemGroup>

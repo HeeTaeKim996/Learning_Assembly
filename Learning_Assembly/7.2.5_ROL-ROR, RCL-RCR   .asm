@@ -71,8 +71,6 @@ main PROC
 
 	; RCL - RCR		: It Similar with ROR, ROL. But Min/Max To CF. And CF To Max/Min
 					; It's Like ROR - ROL On [ Bits + 1 ]  
-					; It is used For Making More than Word size Bits Progress Shift
-					;  ex) Win-32 -> QDWORD. x64 -> 128 bits
 
 	mov eax, 0
 	mov al, 4Bh;
