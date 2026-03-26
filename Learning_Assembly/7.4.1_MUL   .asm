@@ -11,60 +11,45 @@ Crlf PROTO
 WriteHex PROTO
 
 
-.data
-val DWORD 3
-bVal BYTE 2
-wVal WORD 16
-dwVal DWORD 100h 
 
 .code
 main PROC
-	mov eax, 5
-	mov ebx, 4
+
+	; ! MUL Preludes Mutiplier is Unsigned. So Bit Extension is Zero-Extension. NOT Sign Extension
+
+
+	; бс  Multiplied Must Matched With Muplier's Size.
+	;	Dest		/		Multiplied		/		Mutiplier		Are Below
+
+	;	AX			/		AL				/		reg/mem8
+	;	DX:AX		/		AX				/		reg/mem16
+	;	EDX:EAX		/		EAX				/		reg/mem32
+
 	
-	mul ebx
-	call WriteInt		; 20
-	call Crlf
-
-	mov eax, 5
-	mul val
-	call WriteInt		; 15
-	call Crlf
-
-	; Multiplier can be reg | mem
-
-
-
-
-
-
-	call Crlf
-	call Crlf
-	call Crlf
-
-
-
-	; Multiplied Must Matched With Muplier's Size.
-	; IF Multiplier == BYTE,	Mutiplied == AL.	Destination == AX			( * 2 Size )
-	; If Multiplier == WORD,	Mutiplied == AX,	Destination == DX : AX		( * 2 Size )
-	; If Multiplier == DWORD,	Multiplied == EAX,	Destination == EDX : EAX	( * 2 Size )
+	; бс If Dest's Upper Bits (AH, DX, EDX) is Zero, CF == 0, If Not Zero, CF == 1
 	
+	mov eax, 0
+
+
 	mov ah, 12h
 	mov al, 12h
+	mov bl, 2
 
-	mul bVal
-	call DumpRegs ; ah 12 is Cleared. Just 0006
+	mul bl
+	call DumpRegs ; AH 12 is Cleared. AL == 24. CF == 0
 	
 
 	mov eax, 12341234h
-	mul wVal			; Multiply 16 ( << 4 )
-	call DumpRegs		; Upper 1234h Is Same.  DX == 0001h, AX == 2340h
+	mov bx, 16
+	mul bx				; Multiply 16 ( << 4 )
+	call DumpRegs		; Upper 1234h Is Same.  DX == 0001h, AX == 2340h. CF == 1
 
 	
 
 	mov eax, 12341234h
-	mul dwVal			; Multiply 100h ( << 8 )
-	call DumpRegs		; DX == 12h,  EAX == 34123400h 
+	mov ebx, 100h
+	mul ebx				; Multiply 100h ( << 8 )
+	call DumpRegs		; EDX == 12h,  EAX == 34123400h. CF == 1
 
 	INVOKE ExitProcess, 0
 main ENDP

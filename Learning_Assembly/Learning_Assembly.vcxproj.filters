@@ -35,7 +35,7 @@
     <Filter Include="Source Files\7.3_Exmaple_Of_Shift">
       <UniqueIdentifier>{4ea58432-8233-44ab-abc7-011d7a8e3f6d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\7.4_">
+    <Filter Include="Source Files\7.4_★ MUL, DIV">
       <UniqueIdentifier>{c3f60c51-bef9-4349-b553-4aef42cd246a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -266,7 +266,22 @@
       <Filter>Source Files\7.3_Exmaple_Of_Shift</Filter>
     </MASM>
     <MASM Include="7.4.1_MUL   .asm">
-      <Filter>Source Files\7.4_</Filter>
+      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+    </MASM>
+    <MASM Include="7.4.2_IMUL   .asm">
+      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+    </MASM>
+    <MASM Include="7.4.4_DIV   .asm">
+      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+    </MASM>
+    <MASM Include="7.4.5_1_CBW, CWD, CDQ,   IDIV   .asm">
+      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+    </MASM>
+    <MASM Include="7.4.5_2_OverFlow Of DIV, IDIV   .asm">
+      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+    </MASM>
+    <MASM Include="7.4.6_Example Of MUL, DIV   .asm">
+      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
     </MASM>
   </ItemGroup>
   <ItemGroup>
