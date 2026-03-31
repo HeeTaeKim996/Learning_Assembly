@@ -331,6 +331,12 @@
     <MASM Include="8.2.3_2_★_Pointer %28LEA%29   .asm">
       <Filter>Source Files\8.2_★_EBP</Filter>
     </MASM>
+    <MASM Include="8.2.4_ENTER, LEAVE   .asm">
+      <Filter>Source Files\8.2_★_EBP</Filter>
+    </MASM>
+    <MASM Include="8.2.5_LOCAL   .asm">
+      <Filter>Source Files\8.2_★_EBP</Filter>
+    </MASM>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Template.txt">

@@ -136,7 +136,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </MASM>
-    <MASM Include="8.2.3_2_★_Pointer %28LEA%29   .asm" />
+    <MASM Include="8.2.3_2_★_Pointer %28LEA%29   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
     <MASM Include="6.2.4_NOT, XOR   .asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
@@ -431,6 +433,10 @@
     <MASM Include="8.2.3_1_★_LocalVariable   .asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
+    <MASM Include="8.2.4_ENTER, LEAVE   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="8.2.5_LOCAL   .asm" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Template.txt" />
