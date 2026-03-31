@@ -11,9 +11,6 @@
     <Filter Include="Source Files\3_4">
       <UniqueIdentifier>{c665caae-1df4-4dcd-9aec-ee55a77d1718}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\5.4_  %28Stack, Procedure%29">
-      <UniqueIdentifier>{810b9d13-dc24-4eb7-a69d-d26fd44f8d37}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\6.1_%28Bool%29">
       <UniqueIdentifier>{03abc4aa-0962-4f1a-b9dd-400f81386272}</UniqueIdentifier>
     </Filter>
@@ -29,14 +26,29 @@
     <Filter Include="Source Files\6.7_IF_WHILE_REPEAT">
       <UniqueIdentifier>{73b049ce-61a3-4105-9f3b-5d9245bf1120}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\7.2_">
-      <UniqueIdentifier>{0f4a65e7-0704-456c-b3e0-888ec875e743}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\7.3_Exmaple_Of_Shift">
       <UniqueIdentifier>{4ea58432-8233-44ab-abc7-011d7a8e3f6d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\7.4_★ MUL, DIV">
+    <Filter Include="Source Files\7.7_Packed BCD">
+      <UniqueIdentifier>{3a778868-f4f8-4b9e-a0c7-04d008543c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\7.2_SHIFT">
+      <UniqueIdentifier>{0f4a65e7-0704-456c-b3e0-888ec875e743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\7.4_2_ADC, SBB">
+      <UniqueIdentifier>{f3dc2cfa-5ef9-480a-a6cd-57d7babf19b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\7.4_1_★ MUL, DIV">
       <UniqueIdentifier>{c3f60c51-bef9-4349-b553-4aef42cd246a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\7.5_Unpacked BCD">
+      <UniqueIdentifier>{29613dc1-4f6c-410d-b144-693ba0cd331a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\5.4_  Stack, Procedure, ESP">
+      <UniqueIdentifier>{810b9d13-dc24-4eb7-a69d-d26fd44f8d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\8.2_★_EBP">
+      <UniqueIdentifier>{cfcef2ec-df89-494d-bd70-0cf39bfdbc0e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -167,22 +179,22 @@
       <Filter>Source Files\5.3_Irvinre32Lib</Filter>
     </MASM>
     <MASM Include="5.4.2_1_PUSH, POP   .asm">
-      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+      <Filter>Source Files\5.4_  Stack, Procedure, ESP</Filter>
     </MASM>
     <MASM Include="5.4.2_2__PUSHFD, PUSHAD   .asm">
-      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+      <Filter>Source Files\5.4_  Stack, Procedure, ESP</Filter>
     </MASM>
     <MASM Include="5.4.2_3_ +_DONT_TOUCH_ESP, EBP  .asm">
-      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+      <Filter>Source Files\5.4_  Stack, Procedure, ESP</Filter>
     </MASM>
     <MASM Include="5.5.1_PROC, CALL, EIP, RET   .asm">
-      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+      <Filter>Source Files\5.4_  Stack, Procedure, ESP</Filter>
     </MASM>
     <MASM Include="5.5.2_Nested Procedure Call   .asm">
-      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+      <Filter>Source Files\5.4_  Stack, Procedure, ESP</Filter>
     </MASM>
     <MASM Include="5.5.3_PROC_USES  .asm">
-      <Filter>Source Files\5.4_  %28Stack, Procedure%29</Filter>
+      <Filter>Source Files\5.4_  Stack, Procedure, ESP</Filter>
     </MASM>
     <MASM Include="6.2.2_AND, OR   .asm">
       <Filter>Source Files\6.1_%28Bool%29</Filter>
@@ -248,13 +260,13 @@
       <Filter>Source Files\6.7_IF_WHILE_REPEAT</Filter>
     </MASM>
     <MASM Include="7.2.2_SHL-SHR, SAL-SAR   .asm">
-      <Filter>Source Files\7.2_</Filter>
+      <Filter>Source Files\7.2_SHIFT</Filter>
     </MASM>
     <MASM Include="7.2.5_ROL-ROR, RCL-RCR   .asm">
-      <Filter>Source Files\7.2_</Filter>
+      <Filter>Source Files\7.2_SHIFT</Filter>
     </MASM>
     <MASM Include="7.2.9_SHLD, SHRD   .asm">
-      <Filter>Source Files\7.2_</Filter>
+      <Filter>Source Files\7.2_SHIFT</Filter>
     </MASM>
     <MASM Include="7.3.1_EX_Many Byte Shift   .asm">
       <Filter>Source Files\7.3_Exmaple_Of_Shift</Filter>
@@ -266,22 +278,58 @@
       <Filter>Source Files\7.3_Exmaple_Of_Shift</Filter>
     </MASM>
     <MASM Include="7.4.1_MUL   .asm">
-      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+      <Filter>Source Files\7.4_1_★ MUL, DIV</Filter>
     </MASM>
     <MASM Include="7.4.2_IMUL   .asm">
-      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+      <Filter>Source Files\7.4_1_★ MUL, DIV</Filter>
     </MASM>
     <MASM Include="7.4.4_DIV   .asm">
-      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+      <Filter>Source Files\7.4_1_★ MUL, DIV</Filter>
     </MASM>
     <MASM Include="7.4.5_1_CBW, CWD, CDQ,   IDIV   .asm">
-      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+      <Filter>Source Files\7.4_1_★ MUL, DIV</Filter>
     </MASM>
     <MASM Include="7.4.5_2_OverFlow Of DIV, IDIV   .asm">
-      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+      <Filter>Source Files\7.4_1_★ MUL, DIV</Filter>
     </MASM>
     <MASM Include="7.4.6_Example Of MUL, DIV   .asm">
-      <Filter>Source Files\7.4_★ MUL, DIV</Filter>
+      <Filter>Source Files\7.4_1_★ MUL, DIV</Filter>
+    </MASM>
+    <MASM Include="7.6.1_AAA   .asm">
+      <Filter>Source Files\7.5_Unpacked BCD</Filter>
+    </MASM>
+    <MASM Include="7.6.2_AAS   .asm">
+      <Filter>Source Files\7.5_Unpacked BCD</Filter>
+    </MASM>
+    <MASM Include="7.6.3_AAM, AAD   .asm">
+      <Filter>Source Files\7.5_Unpacked BCD</Filter>
+    </MASM>
+    <MASM Include="7.7.1_DAA   .asm">
+      <Filter>Source Files\7.7_Packed BCD</Filter>
+    </MASM>
+    <MASM Include="7.7.2_DAS.asm">
+      <Filter>Source Files\7.7_Packed BCD</Filter>
+    </MASM>
+    <MASM Include="7.5.1_ADC, SBB   .asm">
+      <Filter>Source Files\7.4_2_ADC, SBB</Filter>
+    </MASM>
+    <MASM Include="8.2.2_1_Explicit Stack Parameters   .asm">
+      <Filter>Source Files\8.2_★_EBP</Filter>
+    </MASM>
+    <MASM Include="8.2.0_EBP   .asm">
+      <Filter>Source Files\8.2_★_EBP</Filter>
+    </MASM>
+    <MASM Include="8.2.2_2_★_Parameter  .asm">
+      <Filter>Source Files\8.2_★_EBP</Filter>
+    </MASM>
+    <MASM Include="8.2.2_3_USES vs EQU Problem   .asm">
+      <Filter>Source Files\8.2_★_EBP</Filter>
+    </MASM>
+    <MASM Include="8.2.3_1_★_LocalVariable   .asm">
+      <Filter>Source Files\8.2_★_EBP</Filter>
+    </MASM>
+    <MASM Include="8.2.3_2_★_Pointer %28LEA%29   .asm">
+      <Filter>Source Files\8.2_★_EBP</Filter>
     </MASM>
   </ItemGroup>
   <ItemGroup>

@@ -18,6 +18,9 @@ main PROC
 	; Stack (PUSH & POP is Common Register Space. (For Any. eax, ebx, ecx, Ram..))
 	; So Be Cautious of LIFO Sequence
 
+	; PUSH Decrease ESP ( NOT Increase ! )
+	; POP Increase ESP
+
 	mov ecx, nameSize
 	mov esi, 0
 	L1:
