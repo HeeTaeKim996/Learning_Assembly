@@ -50,6 +50,12 @@
     <Filter Include="Source Files\8.2_★_EBP">
       <UniqueIdentifier>{cfcef2ec-df89-494d-bd70-0cf39bfdbc0e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\8.3_Recursive">
+      <UniqueIdentifier>{f46531dd-d1f8-4028-adf1-3206e2661bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\8.4_INVOKE, ADDR, PROC, PROTO">
+      <UniqueIdentifier>{2699bdbe-49db-4f7c-8690-ecffd14b260e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <MASM Include="00.first.asm">
@@ -336,6 +342,12 @@
     </MASM>
     <MASM Include="8.2.5_LOCAL   .asm">
       <Filter>Source Files\8.2_★_EBP</Filter>
+    </MASM>
+    <MASM Include="8.3.2_Recursive_Factorial.asm">
+      <Filter>Source Files\8.3_Recursive</Filter>
+    </MASM>
+    <MASM Include="8.4.1_INVOKE, PROC, PROTO, ADDR    .asm">
+      <Filter>Source Files\8.4_INVOKE, ADDR, PROC, PROTO</Filter>
     </MASM>
   </ItemGroup>
   <ItemGroup>

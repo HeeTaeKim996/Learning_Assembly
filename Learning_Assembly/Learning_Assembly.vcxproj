@@ -436,7 +436,13 @@
     <MASM Include="8.2.4_ENTER, LEAVE   .asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
-    <MASM Include="8.2.5_LOCAL   .asm" />
+    <MASM Include="8.2.5_LOCAL   .asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="8.3.2_Recursive_Factorial.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </MASM>
+    <MASM Include="8.4.1_INVOKE, PROC, PROTO, ADDR    .asm" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Template.txt" />
