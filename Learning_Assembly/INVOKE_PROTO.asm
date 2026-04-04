@@ -7,12 +7,13 @@ includelib Irvine32.lib
 ExitProcess PROTO, dwExitCode:DWORD
 DumpRegs PROTO
 
+ExternFunc PROTO, var1:DWORD, var2:DWORD, var3:DWORD
 	
 
 .code
 main PROC
 		
-		
+	INVOKE ExternFunc, 1, 2, 3
 	
 
 	INVOKE ExitProcess, 0

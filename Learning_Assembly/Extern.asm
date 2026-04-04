@@ -7,14 +7,19 @@ includelib Irvine32.lib
 ExitProcess PROTO, dwExitCode:DWORD
 DumpRegs PROTO
 
-	
+
 
 .code
-main PROC
-		
-		
-	
 
-	INVOKE ExitProcess, 0
-main ENDP
-END main
+sub1 PROC, var1 : DWORD
+	mov eax, var1
+
+	call DumpRegs
+
+
+	ret
+sub1 ENDP
+
+
+	
+END

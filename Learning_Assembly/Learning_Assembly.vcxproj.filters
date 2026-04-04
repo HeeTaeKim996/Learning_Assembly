@@ -53,8 +53,29 @@
     <Filter Include="Source Files\8.3_Recursive">
       <UniqueIdentifier>{f46531dd-d1f8-4028-adf1-3206e2661bd6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\8.4_INVOKE, ADDR, PROC, PROTO">
+    <Filter Include="Source Files\8.4_★_Module">
       <UniqueIdentifier>{2699bdbe-49db-4f7c-8690-ecffd14b260e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\8.4_★_Module\8.5.3_inc, EXTERNDEF">
+      <UniqueIdentifier>{7fe0f206-41c8-4dd7-81f5-b8eff3f62893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\8.4_★_Module\8.4.1_INVOKE, PROC, PROTO, ADDR">
+      <UniqueIdentifier>{ca4505f9-229b-4144-8038-21ad72bea2db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\8.4_★_Module\8.5.5_★_EXTERN, PROTO">
+      <UniqueIdentifier>{1c8990c3-41b1-4014-b6f3-dd544749b665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\8.4_★_Module\8.5.5_★_EXTERN, PROTO\1_Etxern_Classic_Ver">
+      <UniqueIdentifier>{ff53945b-744b-4ace-bf2f-20de98dbbe63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\8.4_★_Module\8.5.5_★_EXTERN, PROTO\2_Extern_%40n_Ver">
+      <UniqueIdentifier>{29c21a51-0949-40b0-9eda-0cc60dff6ee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\8.4_★_Module\8.5.5_★_EXTERN, PROTO\3_INVOKE-PROTO_Ver">
+      <UniqueIdentifier>{bd889f80-590f-4f65-b222-29c11905febb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\9.2_★_StringPrimitive">
+      <UniqueIdentifier>{2143be6f-f316-4f91-ab3d-631c06852abc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -346,13 +367,57 @@
     <MASM Include="8.3.2_Recursive_Factorial.asm">
       <Filter>Source Files\8.3_Recursive</Filter>
     </MASM>
+    <MASM Include="8.5.2_Extern_Proc   .asm">
+      <Filter>Source Files\8.4_★_Module\8.5.5_★_EXTERN, PROTO\2_Extern_%40n_Ver</Filter>
+    </MASM>
+    <MASM Include="Extern.asm">
+      <Filter>Source Files\8.4_★_Module\8.5.5_★_EXTERN, PROTO\2_Extern_%40n_Ver</Filter>
+    </MASM>
+    <MASM Include="8.5.3_EXTERNDEF   .asm">
+      <Filter>Source Files\8.4_★_Module\8.5.3_inc, EXTERNDEF</Filter>
+    </MASM>
+    <MASM Include="sub1.asm">
+      <Filter>Source Files\8.4_★_Module\8.5.3_inc, EXTERNDEF</Filter>
+    </MASM>
     <MASM Include="8.4.1_INVOKE, PROC, PROTO, ADDR    .asm">
-      <Filter>Source Files\8.4_INVOKE, ADDR, PROC, PROTO</Filter>
+      <Filter>Source Files\8.4_★_Module\8.4.1_INVOKE, PROC, PROTO, ADDR</Filter>
+    </MASM>
+    <MASM Include="8.5.5_EXTERN   .asm">
+      <Filter>Source Files\8.4_★_Module\8.5.5_★_EXTERN, PROTO\1_Etxern_Classic_Ver</Filter>
+    </MASM>
+    <MASM Include="ArraySum.asm">
+      <Filter>Source Files\8.4_★_Module\8.5.5_★_EXTERN, PROTO\1_Etxern_Classic_Ver</Filter>
+    </MASM>
+    <MASM Include="ExternFunc.asm">
+      <Filter>Source Files\8.4_★_Module\8.5.5_★_EXTERN, PROTO\3_INVOKE-PROTO_Ver</Filter>
+    </MASM>
+    <MASM Include="INVOKE_PROTO.asm">
+      <Filter>Source Files\8.4_★_Module\8.5.5_★_EXTERN, PROTO\3_INVOKE-PROTO_Ver</Filter>
+    </MASM>
+    <MASM Include="9.2.1_MOVSB, MOVSW, MOVSD,   REP, CLD, STD   .asm">
+      <Filter>Source Files\9.2_★_StringPrimitive</Filter>
+    </MASM>
+    <MASM Include="9.2.2_CMPSB, CMPSW, CMPSD,   REPE   .asm">
+      <Filter>Source Files\9.2_★_StringPrimitive</Filter>
+    </MASM>
+    <MASM Include="9.2.3_SCASB, SCASW, SCASD,   REPNE   .asm">
+      <Filter>Source Files\9.2_★_StringPrimitive</Filter>
+    </MASM>
+    <MASM Include="9.2.4_STOSB, STOSW, STOSD   .asm">
+      <Filter>Source Files\9.2_★_StringPrimitive</Filter>
+    </MASM>
+    <MASM Include="9.2.5_LODSB, LODSW, LODSD   .asm">
+      <Filter>Source Files\9.2_★_StringPrimitive</Filter>
     </MASM>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Template.txt">
       <Filter>Source Files</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vars.inc">
+      <Filter>Source Files\8.4_★_Module\8.5.3_inc, EXTERNDEF</Filter>
+    </None>
   </ItemGroup>
 </Project>
